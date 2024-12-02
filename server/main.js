@@ -1,3 +1,3 @@
-import api from './api.js';
+import app from './api.js';
 
-export default api;
+export default app;
