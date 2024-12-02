@@ -1,11 +1,11 @@
 import 'colors';
-import express from 'express';
+import express, { application } from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import blogRoutes from '../routes/blogRoutes.js';
-import MongoConnect from '../db/mongoDB.js';
+import blogRoutes from './routes/blogRoutes.js';
+import MongoConnect from './db/mongoDB.js';
 dotenv.config();
 
 const app = express();
@@ -29,3 +29,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+export default api;

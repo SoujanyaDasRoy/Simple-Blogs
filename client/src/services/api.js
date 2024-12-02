@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: `http://localhost:7000/api`});
+const api = axios.create({ baseURL: `https://simple-blogs-api.vercel.app/api`});
 
 export const fetchBlogs = async ()=>{
     return await api.get("/blogs");
